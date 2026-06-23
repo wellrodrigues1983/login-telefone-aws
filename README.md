@@ -1,4 +1,4 @@
-# Login por telefone — AuthServer + Apps Android e iOS
+# Ativando Cadastro por SMS - AWS, Backend Kotlin e App IOS
 
 Trabalho da disciplina (PUCPR) — **Tema 1: Login por telefone**.
 
