@@ -13,12 +13,11 @@ O projeto tem três partes:
 
 ## Integrantes
 
-- _Wellington Rodrigues_
-- _(adicione o nome da dupla aqui, se houver)_
+- Wellington Rodrigues
 
 ## Vídeo de demonstração
 
-- _Adicione aqui o link do vídeo (público ou não listado)._
+https://youtu.be/ztYIbk2_RzY
 
 ---
 
