@@ -1,0 +1,41 @@
+# ---- Geral ----
+.DS_Store
+*.log
+
+# Git interno do Xcode (desabilitado para unificar tudo em um único repo)
+.git-xcode-disabled/
+**/.git-xcode-disabled/
+
+# ---- Segredos / config local (NUNCA commitar) ----
+local.properties
+*.env
+.env
+secrets.properties
+
+# ---- IDEs (JetBrains/Android Studio/IntelliJ) ----
+# Ignora TODOS os .idea (em qualquer subpasta) — pode conter credenciais em run configs.
+.idea/
+**/.idea/
+*.iml
+
+# ---- Gradle / build (Android e Spring) ----
+.gradle/
+**/.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild
+.cxx
+.kotlin/
+**/.kotlin/
+
+# ---- Kotlin/Java ----
+*.class
+
+# ---- iOS / Xcode ----
+**/xcuserdata/
+**/*.xcuserstate
+**/DerivedData/
+**/*.xcscmblueprint
+**/.swiftpm/
+*.xcworkspace/xcuserdata/

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: loginawstelefone
+
+server:
+  port: 8080
+
+# Configuração do envio de SMS via AWS SNS.
+# Credenciais vêm do ambiente: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION.
+# Deixe enabled=false para testar localmente (o código é impresso no log).
+# Defina AWS_SNS_ENABLED=true para enviar SMS de verdade.
+# sender-id fica vazio por padrão: Brasil/EUA não aceitam SenderID alfanumérico e isso pode
+# causar rejeição do SMS. Só defina AWS_SNS_SENDER_ID em países que suportam.
+aws:
+  region: ${AWS_REGION:us-east-1}
+  # Credenciais: lidas das variáveis de ambiente. Se ficarem vazias, o app usa a
+  # cadeia padrão do SDK (~/.aws/credentials, IAM role, etc.).
+  access-key-id: ${AWS_ACCESS_KEY_ID:}
+  secret-access-key: ${AWS_SECRET_ACCESS_KEY:}
+  sns:
+    enabled: ${AWS_SNS_ENABLED:true}
+    sender-id: ${AWS_SNS_SENDER_ID:}
